@@ -19,11 +19,17 @@ I have included some documentation including a **reference for the API** , as we
 
 - Have GIT installed
 - Have node and npm installed
+- Have a command line interface available (e.g., Powershell)
 - Access to a REST API testing CLI / application (e.g., insomnia)
 
 ## Get started
 
-0. If not already available, install GIT/GitHub (https://github.com/), node & npm (https://nodejs.org/en/download), as well as a REST API testing program like Insomnia (https://insomnia.rest/download)
+0. If not already done...
+
+- Install GIT/GitHub (https://github.com/), node & npm (https://nodejs.org/en/download), as well as a REST API testing program like Insomnia (https://insomnia.rest/download)
+- Open a command line interface (e.g., Powershell)
+- Pull this repository to your local environment `git pull https://github.com/CMorenoStokoe/pynea-test-api`
+
 1. Install dependencies `npm install`
 2. Run API `nest start` (if this doesn't work run `npm i -g @nestjs/cli` first to ensure the nest CLI is installed)
 3. Read the API-Reference documentation for end points to test using your testing program of choice (./documentation)
