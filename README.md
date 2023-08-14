@@ -25,7 +25,7 @@ I have included some documentation including a **reference for the API** , as we
 
 0. If not already available, install GIT/GitHub (https://github.com/), node & npm (https://nodejs.org/en/download), as well as a REST API testing program like Insomnia (https://insomnia.rest/download)
 1. Install dependencies `npm install`
-2. Run API `nest start`
+2. Run API `nest start` (if this doesn't work run `npm i -g @nestjs/cli` first to ensure the nest CLI is installed)
 3. Read the API-Reference documentation for end points to test using your testing program of choice (./documentation)
 
 _Note: For the purposes of this test, I have not git-ignored the .env file, though usually creating this with your unique credentials would be an additional step._

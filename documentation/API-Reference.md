@@ -5,6 +5,8 @@ All end points currently return a response from a Neo4J database containing retu
 Both the API and this documentation were intended to be broadly in line with modern REST API specs
 E.g.: https://spec.openapis.org/oas/latest.html
 
+_The API is exposed on port 300. Example default URL: http://localhost:3000/_
+
 ## sweets
 
 Sweets are represented in the database as nodes with the following properties:
