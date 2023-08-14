@@ -19,6 +19,7 @@ import { Query } from './app';
 // todo: Add handling for response timeouts, so people with intermittent connections can re-try queries
 // todo: Really we should explicitly create read/write transactions (using driver.session) but since this is a small app we aren't worried about load
 
+// * extra: Documentation for reference/diagrams
 // * extra: End to end testing
 // * extra: Flexible Neo4jService to accommodate new queries/endpoints without a refactor
 
