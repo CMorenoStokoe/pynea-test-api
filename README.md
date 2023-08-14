@@ -4,11 +4,10 @@ A technical test to develop a sweet management system ([Wiki](https://github.com
 
 ## Description
 
-`/api`
 This is a REST API written using Nestjs and Neo4j. It exposes various end point that meet the requirements of the technical challenge by providing functionalities to read and write from a network database storing details about sweets, machines and orders.
 **Commenting:** I have tried to comment meaningfully while still writing code that is interpretable on its own. _You will find some comments pre-empting some limitations, particularly on the app.service.ts_
 
-`/documentation`
+###Documentation
 I have included some documentation including a **reference for the API** , as well as a **schematic diagram**.
 
 - Reference for the API: Details entry points and expected parameters/return values for resources accessible from the API
