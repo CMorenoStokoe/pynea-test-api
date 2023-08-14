@@ -1,0 +1,11 @@
+machineId,type,capacity,status
+M001,Chocolate Melter,50kg,Operational
+M002,Sugar Grinder,30kg,Out of Service
+M003,Gummy Molder,100kg,Operational
+M004,Fudge Setter,40kg,Maintenance
+M005,Jelly Caster,90kg,Operational
+M006,Toffee Maker,70kg,Operational
+M007,Wrapper Machine,1000 items/hour,Operational
+M008,Icing Sprayer,25kg,Out of Service
+M009,Marshmallow Puffer,60kg,Operational
+M010,Baking Oven,200kg,Operational

@@ -1,0 +1,11 @@
+orderId,customerName,status
+1001,Alice Thompson,Pending
+1002,John Smith,Shipped
+1003,Mary Johnson,Delivered
+1004,Robert Brown,Cancelled
+1005,Patricia Garcia,Processing
+1006,Michael Martinez,Pending
+1007,Linda Wilson,Shipped
+1008,William Anderson,Delivered
+1009,Elizabeth Taylor,Processing
+1010,James White,Cancelled
