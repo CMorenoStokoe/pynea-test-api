@@ -1,6 +1,6 @@
 # Pynea
 
-A technical test to develop a sweet management system
+A technical test to develop a sweet management system ([Wiki](https://github.com/CMorenoStokoe/pynea-test-api/wiki))
 
 ## Description
 
