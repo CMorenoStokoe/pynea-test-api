@@ -15,6 +15,8 @@ describe('AppController (e2e)', () => {
     await app.init();
   });
 
+  // todo: Should also test the response code (e.g., .expect(200) for successful GET requests)
+
   it('sweets/withQuantityBelow/:quantity (GET)', () => {
     return request(app.getHttpServer())
       .get('/sweets/withQuantityBelow/500')

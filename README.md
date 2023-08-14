@@ -31,8 +31,9 @@ I have included some documentation including a **reference for the API** , as we
 - Pull this repository to your local environment `git pull https://github.com/CMorenoStokoe/pynea-test-api`
 
 1. Install dependencies `npm install`
-2. Run API `nest start` (if this doesn't work run `npm i -g @nestjs/cli` first to ensure the nest CLI is installed)
-3. Read the API-Reference documentation for end points to test using your testing program of choice (./documentation)
+2. Create a file called `.env` in the root of the folder and paste in credentials (pictures of setup sent securely via email)
+3. Run API `nest start` (if this doesn't work run `npm i -g @nestjs/cli` first to ensure the nest CLI is installed)
+4. Read the API-Reference documentation for end points to test using your testing program of choice (./documentation)
 
 _Note: For the purposes of this test, I have not git-ignored the .env file, though usually creating this with your unique credentials would be an additional step._
 
