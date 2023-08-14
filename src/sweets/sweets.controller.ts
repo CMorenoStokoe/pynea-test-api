@@ -20,6 +20,20 @@ export class SweetsController {
     }
 
     /**
+     * * Get sweets produced by a specific machine
+     * Will return sweet nodes produced by a specific machine
+     * @param machineId <string> Provided as a URL parameter
+     */
+
+    @Get('producedByMachine/:machineId')
+    findNodesByMachine(
+        @Param('machineId') machineId: string
+    ) {
+        return this.sweetsService.getSweetsProducedByMachine(machineId);
+    }
+
+
+    /**
      * * New sweet
      * Creates a new sweet node with given properties
      * @param Body <JSON> Expects properties to be provided as a JSON payload in the body of the request

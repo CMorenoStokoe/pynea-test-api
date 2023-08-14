@@ -23,6 +23,11 @@ Will return sweet nodes that are below a given quantity
 @param quantity <number> Provided as a URL parameter
 Example: http://localhost:3000/sweets/withQuantityBelow/500
 
+`sweets/producedByMachine/:machine`
+Returns all sweets produced by a given machine
+@param machineId <string> Name of a machine that produces sweets, provided as a URL parameter
+Example: http://localhost:3000/sweets/producedByMachine/M006
+
 ### post
 
 `sweets/`

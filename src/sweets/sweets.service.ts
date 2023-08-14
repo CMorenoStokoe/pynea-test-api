@@ -16,6 +16,13 @@ export class SweetsService {
         RETURN n`);
     }
 
+    getSweetsProducedByMachine(machineId: string) {
+        return this.db.query(`
+        MATCH (n1:sweet)<-[e]-(n2:machine)
+        WHERE n2.machineId=${machineId} 
+        RETURN n1`);
+    }
+
     // todo: There is probably a more terse way to deconstruct and array these properties
 
     addSweet({ name, ingredients, price, quantityInStock }: SweetProperties) {

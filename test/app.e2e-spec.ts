@@ -23,6 +23,12 @@ describe('AppController (e2e)', () => {
       .expect(x => x.body.length > 0);
   });
 
+  it('sweets/producedByMachine/:machineId (GET)', () => {
+    return request(app.getHttpServer())
+      .get('/sweets/producedByMachine/M005')
+      .expect(x => x.body.length > 0);
+  });
+
   it('orders/withStatus/:status (GET)', () => {
     return request(app.getHttpServer())
       .get('/orders/withStatus/Cancelled')
