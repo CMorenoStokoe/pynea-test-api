@@ -15,8 +15,8 @@ import { Query } from './app';
 // todo: There should be more error handling logic for failed requests, but a basic example is provided here
 // todo: Validation required to protect against injection (@nest/class-validator)
 // todo: Authentication required in production to ensure only authorised users can use this endpoint
-// todo: Deconstruct Neo4j service after use to save resources and ensure reliability
-// todo: Add response timeout 
+// todo: Deconstruct Neo4j service after use to save resources and ensure reliability on the large scale
+// todo: Add handling for response timeouts, so people with intermittent connections can re-try queries
 // todo: Really we should explicitly create read/write transactions (using driver.session) but since this is a small app we aren't worried about load
 
 // * extra: End to end testing

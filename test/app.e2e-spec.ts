@@ -33,26 +33,47 @@ describe('AppController (e2e)', () => {
       .expect(x => x.body.length > 0);
   });
 
-  /*
-   todo: Tests that mutate the database should be virtualised, and these would go here (to test endpoints without changing our db)
-   mock functions: https://jestjs.io/docs/mock-functions
+  // todo: For unit testing, and parts of end-2-end testing, we would utilise mock functions so our database is not mutated by tests (https://jestjs.io/docs/mock-functions)
 
   it('orders/:orderId/nowContains/:sweet (GET)', () => {
     return request(app.getHttpServer())
-      .get('orders/:orderId/nowContains/:sweet')
+      .get('/orders/1005/nowContains/Gummy Bears')
       .expect(x => x.body.length > 0);
   });
 
   it('machines/:machine/nowProduces/:sweet (GET)', () => {
     return request(app.getHttpServer())
-      .get('machines/:machine/nowProduces/:sweet')
+      .get('/machines/M009/nowProduces/Gummy Bears')
       .expect(x => x.body.length > 0);
   });
-  
-  */
 
-  /*
-   todo: Implement tests for POST requests (same issue as above)
-  */
+  it('sweets/ (POST)', () => {
+    return request(app.getHttpServer())
+      .post('/sweets')
+      .send({ "name": "Skittles", "ingredients": ["sugar", "sweetener", "coloring", "preservative"], "price": 0.05, "quantityInStock": 5000 })
+      .expect(x => x.body.length > 0);
+  });
+
+  it('machines/ (POST)', () => {
+    return request(app.getHttpServer())
+      .post('/machines')
+      .send({ "machineId": "M101", "type": "Liquorice Stomper", "capacity": "35kg", "status": "available" })
+      .expect(x => x.body.length > 0);
+  });
+
+  it('orders/ (POST)', () => {
+    return request(app.getHttpServer())
+      .post('/orders')
+      .send({ "orderId": 999, "customerName": "Chris MS", "status": "Pending" })
+      .expect(x => x.body.length > 0);
+  });
+
+  // todo: A crude way of cleaning up the results of POST test calls to the live db
+
+  it('Test cleanup', () => {
+    return request(app.getHttpServer())
+      .get('/test-cleanup')
+      .expect(x => x.body.length > 0);
+  });
 
 });

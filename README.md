@@ -33,4 +33,4 @@ _Note: For the purposes of this test, I have not git-ignored the .env file, thou
 ## Tests
 
 To run available tests run `npm run test:e2e`
-_Note: Currently just some example end-to-end testing to show how we would test GET endpoints._
+_Note: Currently just some example end-to-end testing to show how we would test endpoints. As noted in the files, unit testing should make use of mock functions._

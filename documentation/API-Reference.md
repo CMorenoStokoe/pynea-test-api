@@ -93,4 +93,4 @@ Example: http://localhost:3000/machines/M009/nowProduces/Gummy Bears
 `machines/`
 Creates a new machine node with given properties
 @param Body <JSON> Expects properties to be provided as a JSON payload in the body of the request
-Example: { "machineId":"Skittles", "type":"Liquorice Stomper", "capacity":"35kg", "status":"available" }
+Example: { "machineId":"M101", "type":"Liquorice Stomper", "capacity":"35kg", "status":"available" }
